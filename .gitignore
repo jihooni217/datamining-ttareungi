@@ -1,0 +1,13 @@
+# Claude Code 로컬 설정·작업 메모 (공개하지 않음)
+.claude/
+CLAUDE.md
+
+# 파이썬·노트북 임시 파일
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS 파일
+Thumbs.db
+desktop.ini
+.DS_Store
