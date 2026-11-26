@@ -7,6 +7,8 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=white)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jihooni217/datamining-ttareungi/blob/main/%EB%94%B0%EB%A6%89%EC%9D%B4_%EC%88%98%EC%9A%94%EC%98%88%EC%B8%A1%28%EC%B5%9C%EC%A2%85%29.ipynb) ← 누르면 노트북이 코랩에서 바로 열립니다 (실행 결과 포함)
+
 ### ▶ 발표 영상 (1분 30초)
 
 프로젝트 소개, 자동 탐색 구조, 코랩 실행 화면과 시연을 담았습니다. 그림을 누르면 영상 파일이 열리고, 그 화면에서 재생하거나 내려받을 수 있습니다.
@@ -124,5 +126,5 @@ Claude로 주제를 정하고 노트북 초안을 만들었고, ChatGPT로 코�
 | `scripts/check.py` | 데이터를 처음 열어 볼 때 쓴 확인용 스크립트 |
 | `docs/images/` | README 그림 (노트북 출력에서 가져옴) |
 
-1. 노트북을 Google Colab에서 열고 위에서부터 차례로 실행합니다. 데이터는 UCI 주소에서 바로 읽어 옵니다. 자동 탐색(8장)은 2~3분 걸립니다.
+1. 맨 위의 "Open in Colab" 배지를 눌러 노트북을 Google Colab에서 열고 위에서부터 차례로 실행합니다. 데이터는 UCI 주소에서 바로 읽어 옵니다. 자동 탐색(8장)은 2~3분 걸립니다.
 2. UCI 주소가 막혀 있으면 `data/SeoulBikeData.csv`를 코랩에 올리고, `read_csv`의 주소를 파일 이름으로 바꿉니다.
