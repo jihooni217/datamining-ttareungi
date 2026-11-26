@@ -5,15 +5,14 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat-square&logo=googlecolab&logoColor=white)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jihooni217/datamining-ttareungi/blob/main/%EB%94%B0%EB%A6%89%EC%9D%B4_%EC%88%98%EC%9A%94%EC%98%88%EC%B8%A1%28%EC%B5%9C%EC%A2%85%29.ipynb) ← 누르면 노트북이 코랩에서 바로 열립니다 (실행 결과 포함)
 
-### ▶ 발표 영상 (1분 30초)
+## 발표 영상 (1분 30초)
 
-프로젝트 소개, 자동 탐색 구조, 코랩 실행 화면과 시연을 담았습니다. 그림을 누르면 영상 파일이 열리고, 그 화면에서 재생하거나 내려받을 수 있습니다.
+프로젝트 소개, 자동 탐색 구조, 코랩 실행 화면과 시연을 담았습니다. 아래 화면의 재생 버튼을 누르면 바로 볼 수 있습니다 (소리 있음).
 
-<a href="따릉이_발표영상(github용).mp4"><img src="docs/images/video_thumb.jpg" width="560" alt="발표 영상 표지: 서울 따릉이 대여 수요 예측"></a>
+https://github.com/user-attachments/assets/3b90bfa2-ed7f-4fd0-9561-64fb0aba7f74
 
 ## 왜 했나
 
@@ -47,7 +46,7 @@
 
 <img src="docs/images/weekday_vs_weekend.png" width="640" alt="평일은 8시와 18시에 봉우리 두 개, 주말은 오후에 봉우리 하나">
 
-**2. 선형회귀는 대여량을 음수로 예측했습니다.** 검증 데이터 1,270개 중 118개가 0보다 작았습니다. 선형회귀는 조건마다 정해진 값을 더하고 빼기만 해서, 추운 새벽에 비까지 오면 빼는 값이 쌓여 0 밑으로 내려갑니다. 게다가 대여량은 시간에 따라 직선으로 늘지 않고 출퇴근 때만 튀어 오르기 때문에, 직선 하나로는 잘 맞지 않았습니다.
+**2. 선형회귀는 대여량을 음수로 예측했습니다.** 검증 데이터 1,270개 중 118개가 0보다 작았습니다. 선형회귀는 조건마다 정해진 값을 더하고 빼기만 해서, 겨울 새벽처럼 춥고 이른 시간에는 빼는 값이 쌓여 0 밑으로 내려갑니다. 게다가 대여량은 시간에 따라 직선으로 늘지 않고 출퇴근 때만 튀어 오르기 때문에, 직선 하나로는 잘 맞지 않았습니다.
 
 **3. 그래서 변수를 직접 만들었습니다.** "출퇴근 시간인가", "비가 오는가"를 0/1 변수로 만들어 넣자, 설명력이 52%에서 60%로 올랐습니다. 그래도 직선 모델로는 한계가 있었습니다.
 
@@ -55,7 +54,7 @@
 
 <img src="docs/images/best_r2_by_algorithm.png" width="560" alt="알고리즘별 최고 검증 점수: KNN 약 0.87, SVR 약 0.83, 선형회귀 약 0.60">
 
-**5. 변수를 다 넣는다고 좋아지지 않았습니다.** 검증 R²로 비교하면, 변수를 전부 쓴 조합(0.848)보다 날씨 + 시간 + 직접 만든 변수 조합(0.868)이 더 좋았습니다.
+**5. 변수를 다 넣는다고 좋아지지 않았습니다.** 가장 좋았던 KNN에서 검증 R²로 비교하면, 변수를 전부 쓴 조합(0.848)보다 날씨 + 시간 + 직접 만든 변수 조합(0.868)이 더 좋았습니다.
 
 ## 자동 탐색 방법
 
