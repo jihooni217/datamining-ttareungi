@@ -131,7 +131,7 @@ Claude로 주제를 정하고 노트북 초안을 만들었고, ChatGPT로 코�
 | `따릉이_발표영상(github용).mp4` | 발표 영상 (TTS 음성 + 자막) |
 | `data/SeoulBikeData.csv` | 원본 데이터 (UCI에서 받은 것과 같은 파일) |
 | `scripts/check.py` | 데이터를 처음 열어 볼 때 쓴 확인용 스크립트 |
-| `docs/images/` | README 그림 (노트북 출력에서 가져옴) |
+| `docs/images/` | README 그림 (노트북 출력 그래프 4장, 전체 흐름도, 자동 탐색 구조도) |
 
 1. 맨 위의 "Open in Colab" 배지를 눌러 노트북을 Google Colab에서 열고 위에서부터 차례로 실행합니다. 데이터는 UCI 주소에서 바로 읽어 옵니다. 자동 탐색(8장)은 2~3분 걸립니다.
 2. UCI 주소가 막혀 있으면 `data/SeoulBikeData.csv`를 코랩에 올리고, `read_csv`의 주소를 파일 이름으로 바꿉니다.
